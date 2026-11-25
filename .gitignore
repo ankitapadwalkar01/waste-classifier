@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dataset and archives
+data/
+datasets/
+*.zip
+*.7z
+*.rar
+
+# Training outputs
+runs/
+wandb/
+logs/
+outputs/
+tensorboard/
+checkpoints/
+reports/
+*.log
+
+# Keep only selected public artifacts
+artifacts/*
+!artifacts/student_ce_best.pth
+!artifacts/comparison.csv
+!artifacts/test_evaluation_summary.json
+!artifacts/classification_report_student_ce.csv
+!artifacts/confusion_student_ce.png
